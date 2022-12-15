@@ -22,6 +22,8 @@ ZSH_THEME="cloud"
 
 #fpath+=($HOME/.zsh/pure)
 
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+
 plugins=(
   git
 )
@@ -83,4 +85,4 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 if which ruby >/dev/null && which gem >/dev/null; then
     PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
 fi
-fpath+=${ZDOTDIR:-~}/.zsh_functions
+
