@@ -1,5 +1,5 @@
 #!/bin/bash
-scrot /tmp/lockshot.png
+scrot -d 1 /tmp/lockshot.png
 convert /tmp/lockshot.png -blur 0x9 /tmp/lockshotblur.png
 i3lock \
   --image /tmp/lockshotblur.png \
