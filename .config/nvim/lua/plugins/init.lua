@@ -80,15 +80,15 @@ local plugins = {
   },
 
   --["nvim-treesitter/nvim-treesitter"] = {
-  --  module = "nvim-treesitter",
-  --  setup = function()
-  --    require("core.lazy_load").on_file_open "nvim-treesitter"
-  --  end,
-  --  cmd = require("core.lazy_load").treesitter_cmds,
-  --  run = ":TSUpdate",
-  --  config = function()
-  --    require "plugins.configs.treesitter"
-  --  end,
+  --module = "nvim-treesitter",
+  --setup = function()
+  --  require("core.lazy_load").on_file_open "nvim-treesitter"
+  --end,
+  --cmd = require("core.lazy_load").treesitter_cmds,
+  --run = ":TSUpdate",
+  --config = function()
+  --  require "plugins.configs.treesitter"
+  --end,
   --},
 
   -- git stuff
