@@ -1,0 +1,13 @@
+#!/bin/bash
+
+is_not_conned=$(expressvpn status | grep -cim1 Not | head -1)
+currentvpn=$(expressvpn status | grep Connected | cut -d ' ' -f3-10)
+
+if [ "$is_not_conned" = "0" ]; then
+  state="🛡"
+  echo "$state "$currentvpn""
+else
+  state="⚔"
+  echo "$state"
+fi
+

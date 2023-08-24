@@ -269,7 +269,6 @@ awful.keyboard.append_global_keybindings({
             if event == "release" then return end
             if     key == "d" then awful.spawn.with_shell("rofi -show drun -show-icons")
             elseif key == "r" then awful.spawn.with_shell("rofi -show run")
-            elseif key == "e" then awful.spawn.with_shell("$HOME/.config/rofi/scripts/rofi_edit")
             elseif key == "q" then awful.spawn.with_shell("$HOME/.config/rofi/scripts/rofi_power")
             elseif key == "i" then awful.spawn.with_shell("$HOME/.config/rofi/scripts/rofi_wifi")
             elseif key == "b" then awful.spawn.with_shell("$HOME/.config/rofi/scripts/rofi_blue")

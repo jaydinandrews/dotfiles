@@ -10,6 +10,6 @@ elif [ "$constate" = "connected" ]; then
     state="直"
     echo "$state" - "$currentwfi"
 else
-    state="直?"
+    state="直 ?"
     echo "$state"
 fi
