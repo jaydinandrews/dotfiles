@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+
+option1=" Connect VPN"
+option2=" Disconnect VPN"
+option3=" Cancel"
+options="$option1\n$option2\n$option3"
+
+action=$(echo -e "$options" | rofi -dmenu -b -l 3 -i -p "🛡 ")
+case "$action" in
+  $option1*)
+      expressvpn connect smart;;
+  $option2*)
+      expressvpn disconnect;;
+  $option3*)
+    exit 0
+esac

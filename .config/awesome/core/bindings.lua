@@ -273,6 +273,7 @@ awful.keyboard.append_global_keybindings({
             elseif key == "i" then awful.spawn.with_shell("$HOME/.config/rofi/scripts/rofi_wifi")
             elseif key == "b" then awful.spawn.with_shell("$HOME/.config/rofi/scripts/rofi_blue")
             elseif key == "s" then awful.spawn.with_shell("$HOME/.config/rofi/scripts/rofi_scrot")
+            elseif key == "v" then awful.spawn.with_shell("$HOME/.config/rofi/scripts/rofi_vpn")
             end
             awful.keygrabber.stop(grabber)
             end
