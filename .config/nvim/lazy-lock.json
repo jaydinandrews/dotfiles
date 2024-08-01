@@ -1,0 +1,11 @@
+{
+  "gruvbox.nvim": { "branch": "main", "commit": "7a1b23e4edf73a39642e77508ee6b9cbb8c60f9e" },
+  "lazy.nvim": { "branch": "main", "commit": "077102c5bfc578693f12377846d427f49bc50076" },
+  "lualine.nvim": { "branch": "master", "commit": "544dd1583f9bb27b393f598475c89809c4d5e86b" },
+  "nvim-tree.lua": { "branch": "master", "commit": "48d0e82f9434691cc50d970898142a8c084a49d6" },
+  "nvim-treesitter": { "branch": "master", "commit": "d13f0183ba93f9b5aba7359146f294abfffff9c3" },
+  "nvim-ts-autotag": { "branch": "main", "commit": "dc5e1687ab76ee02e0f11c5ce137f530b36e98b3" },
+  "nvim-web-devicons": { "branch": "master", "commit": "5be6c4e685618b99c3210a69375b38a1202369b4" },
+  "plenary.nvim": { "branch": "master", "commit": "a3e3bc82a3f95c5ed0d7201546d5d2c19b20d683" },
+  "vim-tmux-navigator": { "branch": "master", "commit": "5b3c701686fb4e6629c100ed32e827edf8dad01e" }
+}

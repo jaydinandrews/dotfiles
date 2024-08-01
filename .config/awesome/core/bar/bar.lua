@@ -94,7 +94,7 @@ s.vpn = awful.widget.watch(".config/awesome/core/bar/widgets/vpn", 10)
                 wibox.container.background(wibox.widget.textbox(" "), theme.bar_bg_one),
                 wibox.container.background(wibox.widget.textbox(" "), theme.bar_bg_fiv),
                 wibox.container.background(s.wifi, theme.bar_bg_fiv),
-                wibox.container.background(wibox.widget.textbox(" "), theme.bar_bg_fiv),
+                --wibox.container.background(wibox.widget.textbox(" "), theme.bar_bg_fiv),
             },
           },
             {
