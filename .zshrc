@@ -4,10 +4,10 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/home/jay/.oh-my-zsh
 
-ZSH_THEME="cloud"
+ZSH_THEME="awesomepanda"
 
 # looking in ~/.oh-my-zsh/themes/
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+# ZSH_THEME_RANDOM_CANDIDATES=( "cloud" "awesomepanda" "miloshadzic")
 # CASE_SENSITIVE="true"
 # HYPHEN_INSENSITIVE="true"
 # DISABLE_AUTO_UPDATE="true"
@@ -74,6 +74,7 @@ alias vim='nvim'
 alias nf='neofetch'
 alias conda_source='source ~/.zsh_sources/conda_zsh.sh'
 alias dots='/usr/bin/git --git-dir=$HOME/.dots-repo/ --work-tree=$HOME'
+alias update='~/.zsh_sources/auto_update.sh'
 
 setopt interactivecomments
 
