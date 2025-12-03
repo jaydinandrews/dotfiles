@@ -1,0 +1,14 @@
+#!/bin/bash
+brt=$(brightnessctl -m -d intel_backlight | awk -F, '{print $4}')
+
+if [ "$brt" == "100%" ]; then
+    icon=""
+elif [ "$brt" \> "79%.*" ]; then
+    icon=""
+elif [ "$brt" \> "41%.*" ]; then
+    icon=""
+elif [ "$brt" \< "40%.*" ]; then
+    icon=""
+fi
+#echo "$icon ${brt%.*}%"
+echo "$icon ${brt%.*}"
