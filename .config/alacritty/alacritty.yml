@@ -1,0 +1,129 @@
+# Modified from Clay Gomera (Drake)'s config.
+# https://github.com/d4r1us-drk/dotfiles/blob/main/user/.config/alacritty/alacritty.yml
+
+## Set colorschemes
+
+#######################################
+##      Alacritty colorschemes       ##
+#######################################
+schemes:
+  ### Gruvbox dark ###
+  gruvbox-dark: &gruvbox-dark
+    # Default colors
+    primary:
+      # hard contrast: background = '0x1d2021'
+      background: '#1d2021'
+      # soft contrast: background = '0x32302f'
+      foreground: '#ebdbb2'
+
+    # Normal colors
+    normal:
+      black:   '#282828'
+      red:     '#cc241d'
+      green:   '#98971a'
+      yellow:  '#d79921'
+      blue:    '#458588'
+      magenta: '#b16286'
+      cyan:    '#689d6a'
+      white:   '#a89984'
+
+    # Bright colors
+    bright:
+      black:   '#928374'
+      red:     '#fb4934'
+      green:   '#b8bb26'
+      yellow:  '#fabd2f'
+      blue:    '#83a598'
+      magenta: '#d3869b'
+      cyan:    '#8ec07c'
+      white:   '#ebdbb2'
+
+### Monokai ###
+  monokai-pro: &monokai-pro
+    # Default colors
+    primary:
+      background: '#2D2A2E'
+      foreground: '#FCFCFA'
+
+    # Normal colors
+    normal:
+      black:   '#403E41'
+      red:     '#FF6188'
+      green:   '#A9DC76'
+      yellow:  '#FFD866'
+      blue:    '#FC9867'
+      magenta: '#AB9DF2'
+      cyan:    '#78DCE8'
+      white:   '#FCFCFA'
+
+    # Bright colors
+    bright:
+      black:   '#727072'
+      red:     '#FF6188'
+      green:   '#A9DC76'
+      yellow:  '#FFD866'
+      blue:    '#FC9867'
+      magenta: '#AB9DF2'
+      cyan:    '#78DCE8'
+      white:   '#FCFCFA'
+ 
+colors: *gruvbox-dark
+
+## Set environment variables
+env:
+  TERM: xterm-256color
+
+## Window settigns
+window:
+  opacity: 0.96
+  padding:
+    x: 6
+    y: 6
+  dynamic_padding: false
+  title: Alacritty
+  class:
+    instance: Alacritty
+    general: Alacritty
+
+## Scrolling settings
+scrolling:
+  history: 5000
+
+## Font settings
+font:
+  normal:
+    family: mononoki Nerd Font
+    style: Regular
+  bold:
+    family: mononoki Nerd Font
+    style: Bold
+  italic:
+    family: mononoki Nerd Font
+    style: Italic
+  bold_italic:
+    family: mononoki Nerd Font
+    style: Bold Italic
+  size: 7
+  offset:
+    x: 0
+    y: 1
+draw_bold_text_with_bright_colors: true
+
+cursor:
+  style: Block
+
+shell:
+  program: /usr/bin/zsh
+
+key_bindings:
+  - { key: V,         mods: Control|Shift, action: Paste                       }
+  - { key: C,         mods: Control|Shift, action: Copy                        }
+  - { key: Insert,    mods: Shift,         action: PasteSelection              }
+  - { key: Key0,      mods: Control,       action: ResetFontSize               }
+  - { key: Equals,    mods: Control,       action: IncreaseFontSize            }
+  - { key: Plus,      mods: Control,       action: IncreaseFontSize            }
+  - { key: Minus,     mods: Control,       action: DecreaseFontSize            }
+  - { key: L,         mods: Control,       action: ClearLogNotice              }
+  - { key: L,         mods: Control,       chars: "\x0c"                       }
+  - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
+  - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
