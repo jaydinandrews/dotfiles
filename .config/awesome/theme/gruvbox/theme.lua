@@ -19,6 +19,7 @@ theme.bar_bg_two = "#076678"
 theme.bar_bg_tre = "#b57614"
 theme.bar_bg_for = "#9d0006"
 theme.bar_bg_fiv = "#8f3f71"
+theme.bar_bg_six = "#c25f1c"
 theme.bar_clock = "#3c3836"
 --- }}}
 

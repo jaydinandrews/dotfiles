@@ -9,6 +9,16 @@ alias lls='ls -lahFtr'
 alias la='ls -A'
 alias lc='ls -CF'
 
+# +-----+
+# | git |
+# +-----+
+
+alias gs='git status'
+alias ga='git add'
+alias gp='git push'
+alias gpo='git push origin'
+alias gc='git commit'
+
 # +--------+
 # | neovim |
 # +--------+

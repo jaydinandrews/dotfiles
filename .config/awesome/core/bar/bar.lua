@@ -36,6 +36,7 @@ s.wifi = awful.widget.watch(".config/awesome/core/bar/widgets/wifi", 10)
 s.brightness = awful.widget.watch(".config/awesome/core/bar/widgets/brightness", 1)
 s.layout = awful.widget.watch(".config/awesome/core/bar/widgets/layout", 1)
 s.vpn = awful.widget.watch(".config/awesome/core/bar/widgets/vpn", 10)
+s.netbird = awful.widget.watch(".config/awesome/core/bar/widgets/netbird", 10)
 
 --  Taglist widget
     s.mytaglist = awful.widget.taglist {
@@ -89,8 +90,11 @@ s.vpn = awful.widget.watch(".config/awesome/core/bar/widgets/vpn", 10)
                 wibox.container.background(wibox.widget.textbox(" "), theme.bar_bg_two),
                 wibox.container.background(s.battery, theme.bar_bg_two),
                 wibox.container.background(wibox.widget.textbox(" "), theme.bar_bg_two),
-                wibox.container.background(wibox.widget.textbox(" "), theme.bar_bg_one),
-                wibox.container.background(s.vpn, theme.bar_bg_one),
+                wibox.container.background(wibox.widget.textbox(" "), theme.bar_bg_six),
+                wibox.container.background(s.netbird, theme.bar_bg_six),
+		wibox.container.background(wibox.widget.textbox(" "), theme.bar_bg_six),
+		wibox.container.background(wibox.widget.textbox(" "), theme.bar_bg_one),
+		wibox.container.background(s.vpn, theme.bar_bg_one),
                 wibox.container.background(wibox.widget.textbox(" "), theme.bar_bg_one),
                 wibox.container.background(wibox.widget.textbox(" "), theme.bar_bg_fiv),
                 wibox.container.background(s.wifi, theme.bar_bg_fiv),

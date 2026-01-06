@@ -1,0 +1,12 @@
+#!/bin/bash
+
+is_conned=$(netbird status | grep -cim1 Management:\ Connected | head -1)
+current_ip=$(netbird status | grep IP | cut -d " " -f 3)
+
+if [ "$is_conned" = "1" ]; then
+  state="🖧"
+  echo "$state "$current_ip""
+else
+  state="🕸"
+  echo "$state"
+fi
